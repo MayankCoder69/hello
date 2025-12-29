@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f6b26b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.collage {
+  position: relative;
+  width: 900px;
+  height: 550px;
+}
+
+/* POLAROID STYLE */
+.polaroid {
+  position: absolute;
+  background: white;
+  padding: 12px 12px 30px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.polaroid img,
+.polaroid video {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  background: black;
+}
+
+.polaroid:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
+
+/* SCATTERED POSITIONS (MATCH IMAGE STYLE) */
+.p1 { top: 40px; left: 180px; transform: rotate(-12deg); }
+.p2 { top: 20px; left: 360px; transform: rotate(8deg); }
+.p3 { top: 50px; left: 540px; transform: rotate(-6deg); }
+
+.p4 { top: 210px; left: 120px; transform: rotate(10deg); }
+.p5 { top: 220px; left: 300px; transform: rotate(-8deg); }
+.p6 { top: 230px; left: 480px; transform: rotate(6deg); }
+
+.v1 { top: 130px; left: 220px; transform: rotate(5deg); }
+.v2 { top: 140px; left: 420px; transform: rotate(-10deg); }
+.v3 { top: 310px; left: 200px; transform: rotate(-5deg); }
+.v4 { top: 310px; left: 420px; transform: rotate(9deg); }
+
+.video-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.text-box {
+  position: absolute;
+  width: 240px;
+  padding: 18px;
+  background: #fff8ee;
+  border-radius: 12px;
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  line-height: 1.5;
+}
+
+.text-box h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.text-box p {
+  font-size: 14px;
+}
+
+/* LEFT BOX */
+.left-text {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-4deg);
+}
+
+/* RIGHT BOX */
+.right-text {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(4deg);
+}
+
+.main-title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Pacifico', 'Brush Script MT', cursive;
+  color: #4b2e2e;
+  letter-spacing: 2px;
+}
+
+.main-title span {
+  display: block;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 6px;
+  color: #7a4a4a;
+}
+
+.end-wish {
+  margin-top: 60px;
+  font-family: 'Pacifico', 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: #6b3f3f;
+  text-align: center;
+  opacity: 0.9;
+}
